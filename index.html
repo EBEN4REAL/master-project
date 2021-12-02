@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css" />
+
+    </head>
+    <body class="container  mt-3">
+        <form name="exam mt-3">
+            <input type="text" name="first">
+            <input type="text" name="last">
+            <input type="button" value="click me" onClick="display()">
+        </form>
+        <form name=RegistrationForm method="post">
+            <table>
+            <tr>
+                <td>*Title:</td>
+                <td>
+                    <select name="title">
+                        <option selected>Mr</option>
+                        <option>Mrs</option>
+                        <option>Ms</option>
+                        <option>Miss</option>
+                        <option>Dr</option>
+                        <option>Prof</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>First name:</td>
+                <td>
+                    <input type="text" name="firstName" size="20"
+                    maxlength="20" />
+                </td>
+            </tr>
+            <tr>
+                <td>Last name:</td>
+                <td><input type="text" name="lastName" size="20"
+                    maxlength="20" />
+                </td>
+            </tr>
+            <tr>
+                <td>Date of Birth:</td>
+                <td>
+                    <input type="text" name="dob" size="20"
+                    maxlength="20"/>
+            <tr><td>Address:</td>
+            <td><textarea name="address" row="4",
+            cols="40"></textarea></tr>
+            <tr><td>Town:</td>
+            <td><input type="text" name="town" size="30"
+            maxlength="40"/></td></tr>
+            <tr><td>County:</td>
+            <td><input type="text" name="county" size="30"
+            maxlength="40"/></td></tr>
+            <tr><td>Postcode:</td>
+            <td><input type="text" name="postcode" size="20"
+                maxlength="10" /></td></tr>
+                <tr><td>Email:</td>
+                <td><input type="email" name="email" size="30"
+                maxlength="64"/></td></tr>
+                </table>
+        </form>
+        <div class="mt-3 mb-3">
+            <button type="submit" onclick="checkRequired()">Validate form</button>
+        </div>
+        <div class="mt-3">
+            <button onclick="generateWebpage()">Generate Webpage</button>
+            <button onclick="generatePrompts()">Generate prompt boxes</button>
+        </div>
+    </body>
+    <Script src="script.js"></Script>
+</html>
